@@ -14,12 +14,16 @@ Magnitude-aware and Phase-sensitive Learning](https://doi.org/10.1016/j.inffus.2
 Please install MMSegmentation(0.x) first, as per [MMSegmentation documentation](https://github.com/open-mmlab/mmsegmentation/blob/0.x/docs/en/get_started.md#installation).
 
 ```
+# install mmsegmentation codebase
 pip install -U opennmim
 mim install mmcv-full
 git clone -b 0.x https://github.com/open-mmlab/mmsegmentation.git
 cd mmsegmentation
 git checkout f67ef9
 pip install -e .
+
+# install MPLSeg code
+git patch MPLSeg.patch
 ```
 
 ## Training
